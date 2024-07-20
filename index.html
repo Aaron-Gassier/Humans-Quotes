@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humans Quotes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .preview {
+            margin: 20px;
+            border: 2px solid #444;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .preview img {
+            display: block;
+            max-width: 300px;
+            max-height: 200px;
+        }
+        .preview:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background-color: #111;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+        }
+        footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Humans Quotes</h1>
+        <p>This page redirects you to our main websites:</p>
+        <div class="preview" onclick="location.href='https://humansquotes.com/'">
+            <img src="human's_quotes.jpg" alt="Humans Quotes">
+        </div>
+        <div class="preview" onclick="location.href='https://aaron-gassier.github.io/HSK-Mastery/'">
+            <img src="hsk_mastery.jpg" alt="HSK Mastery">
+        </div>
+    </div>
+    <footer>
+        <p>You can send your suggestions and feedback at: <a href="mailto:humansquotes.project@gmail.com">humansquotes.project@gmail.com</a></p>
+        <p>Author: Aaron GASSIER</p>
+    </footer>
+</body>
+</html>
